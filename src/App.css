@@ -1,0 +1,255 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --bg-light: #f9f9f9;
+  --bg-dark: #121212;
+  --purple-main: #D09CFA;
+  --deep-purple: #A555EC;
+  --green-accent: #D0F1D8;
+  --deep-green: #C0EDCB;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+body > #root > main {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+a:visited {
+  color: var(--text-light);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--purple-main);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-weight: 700;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.page-links {
+  margin: 0 10px;
+}
+
+/* Shop  */
+.shop, .plans, .cart {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px
+}
+
+.shop-title, .plans-title, .cart-title {
+  line-height: 2.5rem;
+  margin: 25px auto 35px;
+}
+
+.items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center;
+  align-items: end;
+}
+
+.candy {
+  padding: 10px;
+}
+
+.candy-img {
+  border-radius: 10px;
+  max-height: 200px;
+}
+
+.candy-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+
+.candy-price {
+  margin-bottom: 5px;
+}
+
+.cart-button {
+  background-color: var(--green-accent);  
+  border: var(--deep-green) solid 3px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin: 7px auto;
+  padding: 5px 15px;
+}
+
+.cart-button:hover {
+  background-color: var(--deep-purple);
+  border-color: var(--deep-purple);
+  color: var(--bg-light);
+}
+
+
+/* Plans */
+.options{
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 5% 10%;
+}
+
+.box {
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.box-name {
+  background-color: var(--purple-main);
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  padding: 15px 0;
+  margin-bottom: 25px;
+}
+
+.box-price {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 15px auto 5px;
+  height: 75px;
+  padding: 10px;
+}
+
+.box-description {
+  font-size: 1.1rem;
+  margin: 5px auto;
+  padding: 0 25px;
+}
+
+.sub-button {
+  margin: auto auto 20px;
+}
+
+/* Cart */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.checkout-item {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 30px 15px;
+  width: 500px;
+}
+
+.checkout-img {
+  border-radius: 7px;
+  max-height: 75px;
+  margin-right: 40px;
+}
+
+.not-pic {
+  width: 100%;
+}
+
+.name-div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.checkout-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.checkout-price {
+  font-size: 1.25rem;
+  margin-left: auto;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.plus, .minus {
+  background-color: var(--green-accent);  
+  border: var(--deep-green) solid 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  width: 30px;
+}
+
+.number {
+  width: 40px;
+  text-align: center;
+
+}
+
+.total {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.continue {
+  background-color: var(--green-accent);  
+  border: var(--deep-green) solid 3px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin: 20px auto;
+  padding: 5px 15px;
+}
+
+.empty-cart {
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
