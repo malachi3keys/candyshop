@@ -12,7 +12,7 @@ export default function App() {
   return (
     <main className="App">
       <ShopContextProvider>
-        <Router>
+        <Router basename='/candyshop'>
           <Navbar />
           <Routes>
             <Route path='/' element={<Shop />}/> 
