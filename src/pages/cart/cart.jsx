@@ -15,13 +15,8 @@ export default function Cart() {
             return(
                 <Checkout 
                 key={index}
-                id={item.id}
-                title={item.title}
-                description={item.description}
-                price={item.price}
-                picture={item.picture}
-                altText={item.alttext}
-            />
+                data={item}
+                />
             )
         } else {
             return false

@@ -8,12 +8,7 @@ export default function Shop() {
          return(
             <Candy 
                 key={index}
-                id={candy.id}
-                title={candy.title}
-                description={candy.description}
-                price={candy.price}
-                picture={candy.picture}
-                altText={candy.alttext}
+                data={candy}
             />
             )   
         }

@@ -9,6 +9,7 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: true,
+        max_quantity: 1,
     },
     {
         id: 1,
@@ -18,6 +19,7 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: true,
+        max_quantity: 1,
     },
     {
         id: 2,
@@ -27,6 +29,7 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: true,
+        max_quantity: 1,
     },
     {
         id: 3,
@@ -36,6 +39,7 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: false,
+        max_quantity: 25,
     },
     {
         id: 4,
@@ -45,6 +49,7 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: false,
+        max_quantity: 50,
     },
     {
         id: 5,
@@ -54,6 +59,7 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: false,
+        max_quantity: 32,
     },
     {
         id: 6,
@@ -63,6 +69,7 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: false,
+        max_quantity: 15,
     },
     {
         id: 7,
@@ -72,5 +79,6 @@ import candycane from "./assets/candycane_red_bg_square.jpg"
         picture: candycane,
         alttext: "a red and white striped candy canes scattered across a red background",
         box: false,
+        max_quantity: 12,
     },
 ]

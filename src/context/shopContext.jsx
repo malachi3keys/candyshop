@@ -16,16 +16,26 @@ function defaultCart(){
 export const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(defaultCart())
 
-    const addToCart = (id) => {
-        setCartItems((prev) => ({...prev, [id]: prev[id] + 1}))
+    const addToCart = (id, quantity, max) => {
+        //don't go above max quantity available         
+        if(quantity < max){
+            setCartItems((prev) => ({...prev, [id]: quantity + 1}))
+        }        
     }
 
     const removeFromCart = (id) => {
         setCartItems((prev) => ({...prev, [id]: prev[id] - 1}))
     }
 
-    const updateCart = (id, quantity) => {
-        setCartItems((prev) => ({...prev, [id]: quantity}))
+    const updateCart = (id, quantity, max) => {
+        //check if entered value is a number and only allow up to max quantity
+        if(!isNaN(quantity)) {
+            if(quantity <= max){
+                setCartItems((prev) => ({...prev, [id]: quantity}))
+            } else {
+                setCartItems((prev) => ({...prev, [id]: max}))
+            }  
+        }
     }
 
     const cartTotal = () => {
